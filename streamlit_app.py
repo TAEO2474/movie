@@ -73,7 +73,7 @@ def main():
     st.markdown("**유사 사용자 기반 협업 필터링**으로 추천합니다.")
 
 
-    with st.spinner("데이터 로딩 중..."):
+    with st.spinner("데이터 로딩 중 입니다..."):
         movies, users, ratings = data_load()
         full_data, recommendation_data = data_merge(movies, users, ratings)
         pivot = data_pivot_corr(recommendation_data)
